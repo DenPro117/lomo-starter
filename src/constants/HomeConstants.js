@@ -1,4 +1,4 @@
-export const WELCOME_HEADING = 'React Enterprise Starter Kit';
+export const WELCOME_HEADING = 'Lomo App Built With React';
 export const IMG_ALT = 'React-Enterprise-Starter-Kit';
 export const REPO_URL = 'https://github.com/DenPro117/lomo-starter';
 export const GITHUB_FORK_TEXT = 'Fork on Github';

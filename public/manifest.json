@@ -32,7 +32,7 @@
         "purpose": "any maskable"
       }
     ],
-    "name": "React Enterprise Starter Kit",
+    "name": "Lomo App Built With React",
     "short_name": "Application",
     "orientation": "portrait",
     "display": "standalone",

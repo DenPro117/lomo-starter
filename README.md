@@ -6,7 +6,7 @@
 
 ![Banner](https://user-images.githubusercontent.com/24511864/87848141-f8d04780-c8fa-11ea-8dae-3dde9fe6a68d.png)
 
-# React Enterprise Starter Kit :fire:
+# Lomo App Built With React :fire:
 
 Introducing the Enterprise Starter Kit 🚀, the perfect React boilerplate for web developers and industries looking to improve their web building capabilities. Our Starter Kit is not just highly scalable and performant 🚀💪, it's also incredibly flexible, making it perfect for use in multiple projects 💪🌟.
 
