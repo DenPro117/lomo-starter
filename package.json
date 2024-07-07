@@ -1,0 +1,159 @@
+{
+  "name": "react-boilerplate",
+  "version": "2.0.0",
+  "description": "Awesome React Starter Kit that can scale for an enterprise application with the very easy maintainable codebase.",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "jest",
+    "start-dev": "better-npm-run start-dev",
+    "build-dev": "better-npm-run build-dev",
+    "build-prod": "better-npm-run build-prod",
+    "build-analyze": "better-npm-run build-dev-analyze",
+    "eslint": "eslint --config ./.eslintrc --ext .js,jsx ./src --fix",
+    "storybook": "start-storybook",
+    "prettify": "prettier  --config ./.prettierrc --ext .js,jsx,.scss ./src --write",
+    "stylelint": "stylelint  --config ./.stylelintrc --aei .scss ./src",
+    "build-dev-ssr": "npm run build-dev && better-npm-run build-dev-ssr",
+    "build-prod-ssr": "npm run build-prod && better-npm-run build-prod-ssr",
+    "start-dev-ssr": "npm run build-dev-ssr && node ./server-build/server.js --inspect",
+    "start-prod-ssr": "npm run build-prod-ssr && node ./server-build/server.js"
+  },
+  "betterScripts": {
+    "build-dev-ssr": {
+      "command": "webpack --progress --config ./webpack/server/webpack.dev.config.js",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 3000
+      }
+    },
+    "build-prod-ssr": {
+      "command": "webpack --progress --config ./webpack/server/webpack.prod.config.js",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 3000
+      }
+    },
+    "build-dev": {
+      "command": "webpack --progress --config ./webpack/client/webpack.dev.config.js",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 3000
+      }
+    },
+    "build-dev-analyze": {
+      "command": "webpack -w --progress --config ./webpack/client/webpack.dev.config.js",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 3000,
+        "analyze": true
+      }
+    },
+    "build-prod": {
+      "command": "webpack --progress --config ./webpack/client/webpack.prod.config.js",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 3000
+      }
+    },
+    "start-dev": {
+      "command": "webpack-dev-server --config ./webpack/client/webpack.dev.config.js --open",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 3000
+      }
+    }
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "webpack",
+    "babel",
+    "jsx",
+    "html",
+    "css",
+    "tailwind",
+    "server side rendering",
+    "eslint",
+    "storybook",
+    "redux",
+    "saga"
+  ],
+  "author": "DenPro117",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/node": "^7.20.7",
+    "@storybook/react": "^7.0.6",
+    "axios": "^1.3.6",
+    "prop-types": "^15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-saga": "^1.1.3"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "@testing-library/jest-dom": "^5.11.1",
+    "@testing-library/react": "^14.0.0",
+    "autoprefixer": "^10.4.14",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.5.0",
+    "babel-loader": "^9.1.2",
+    "better-npm-run": "^0.1.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "compression-webpack-plugin": "^10.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "eslint": "^8.39.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.20.1",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "extract-css-chunks-webpack-plugin": "^4.7.5",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^5.5.1",
+    "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "ignore-styles": "^5.0.1",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "lint-staged": "^13.2.1",
+    "mini-css-extract-plugin": "^2.7.5",
+    "nodemon": "^2.0.4",
+    "postcss": "^8.4.23",
+    "postcss-loader": "^7.2.4",
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^18.2.0",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "stylelint": "^15.6.0",
+    "stylelint-webpack-plugin": "^4.1.1",
+    "tailwindcss": "^3.3.1",
+    "webpack": "^5.80.0",
+    "webpack-bundle-analyzer": "^4.6.1",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.11.0",
+    "webpack-manifest-plugin": "^5.0.0",
+    "webpack-merge": "^5.0.9",
+    "webpack-node-externals": "^3.0.0",
+    "workbox-precaching": "^6.5.4",
+    "workbox-webpack-plugin": "^6.5.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "npm run eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run build-prod"
+    }
+  }
+}

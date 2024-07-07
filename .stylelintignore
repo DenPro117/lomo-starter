@@ -1,0 +1,7 @@
+node_modules/*
+dist/*
+src/assets/*
+src/**/*.jsx
+src/**/*.js
+coverage/*
+server-build/*

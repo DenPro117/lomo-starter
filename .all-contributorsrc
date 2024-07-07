@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "DenPro117",
+      "name": "Anand gupta",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/24511864?v=4",
+      "profile": "https://github.com/DenPro117",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "react-enterprise-starter-kit",
+  "projectOwner": "DenPro117",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
